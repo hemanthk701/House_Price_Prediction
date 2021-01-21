@@ -5,7 +5,7 @@ shinyServer(function(input, output) {
   
   cal <- reactive({
     
-    h <- read.csv("C:/Users/User/Desktop/multivariate/House_train.csv")
+    h <- read.csv("#Enter the file path here")
     h = h[complete.cases(h), ]
     
     name<- c( "BsmtFinSF1", "GrLivArea","TotalBsmtSF","MasVnrArea","WoodDeckSF")
